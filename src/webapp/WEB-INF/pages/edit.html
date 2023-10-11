@@ -5,7 +5,7 @@
   <title>Изменить</title>
 </head>
 <body>
-<form action="#" th:action="@{/edit}" th:object="${user}" th:method="PATH">
+<form action="#" th:action="@{/edit}" th:object="${user}" th:method="post">
   <input type="hidden" th:field="*{id}" th:value="*{id}"/>
   <p>Имя: <input type="text" th:field="*{name}" th:value="*{name}" th:charset="utf-8"/></p>
   <p>Фамилия: <input type="text" th:field="*{lastName}" th:value="*{lastName}"/></p>

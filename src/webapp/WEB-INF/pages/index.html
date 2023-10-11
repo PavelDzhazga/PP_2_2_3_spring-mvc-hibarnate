@@ -79,8 +79,8 @@
                 <td th:text="${user.lastName}"></td>
                 <td th:text="${user.age}"></td>
                 <td>
-                    <a href="#" th:href="@{/edit/{linkTitle}(linkTitle=${user.id})}" th:text="Изменить"></a>
-                    <form th:action="@{/delete/{id}(id=${user.id})}" th:method="DELETE">
+                    <a th:href="@{/edit(id=${user.id})}" th:text="Изменить"></a>
+                    <form th:action="@{/delete/(id=${user.id})}" th:method="post">
                         <button type='submit' name='your_name' value='your_value' class='btn-link'>Удалить</button>
                     </form>
                 </td>
